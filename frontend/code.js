@@ -2,8 +2,8 @@ document.getElementById('weatherBtn').
     addEventListener('click', function() {
         var cityName = document.getElementById('cname').value;
         console.log(cityName);
-        // let url = `http://localhost:3000`;
-        let url = `https://comp1537-lab09-momona.onrender.com`;
+        // const url = `http://localhost:3000`;
+        const url = `https://comp1537-lab09-momona.onrender.com`;
         fetch(`${url}/?city=${cityName}`)
         .then(response =>  response.text())
         .then(data => {
